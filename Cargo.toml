@@ -26,7 +26,7 @@ dockside = { path = "crates/dockside" }
 
 # facet ecosystem
 facet = "0.46"
-figue = "2"
+figue = "4"
 facet-core = "0.46"
 facet-value = "0.46"
 facet-json = "0.46"
@@ -37,11 +37,11 @@ facet-tokio-postgres = { path = "crates/facet-tokio-postgres" }
 strid = "10"
 
 # styx ecosystem
-facet-styx = "3"
-styx-embed = "3"
-styx-tree = { version = "3", features = ["facet"] }
-styx-lsp-ext = "3"
-styx-lsp = "3"
+facet-styx = "4"
+styx-embed = "4"
+styx-tree = { version = "4", features = ["facet"] }
+styx-lsp-ext = "4"
+styx-lsp = "4"
 
 # vox ecosystem
 vox = "0.8"
@@ -101,17 +101,6 @@ testcontainers = "0.27"
 testcontainers-modules = { version = "0.15", features = ["postgres"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
-
-[patch.crates-io]
-facet-styx = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
-styx-embed = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
-styx-tree = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
-styx-parse = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
-styx-cst = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
-styx-format = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
-styx-lsp-ext = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
-styx-lsp = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
-styx-lsp-test-schema = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
 
 # facet = { path = "../facet/facet" }
 

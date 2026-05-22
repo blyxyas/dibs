@@ -1703,15 +1703,15 @@ dependencies = [
 
 [[package]]
 name = "facet-styx"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fd837e9f649afb3f0660e749e2efd38126da5e48836abdeec98a008960b6599a"
 dependencies = [
  "ariadne",
  "facet",
  "facet-core",
  "facet-format",
  "facet-reflect",
- "figue",
  "serde_json",
  "styx-format",
  "styx-parse",
@@ -1822,9 +1822,9 @@ dependencies = [
 
 [[package]]
 name = "figue"
-version = "2.0.6"
+version = "4.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "406cc06d1f397eaeae3d11484ec87f8a8f0758688457203e362df3cb040591d8"
+checksum = "e83fc566ee7708ac32d50077aaaeb70020b0e64e9098c642c7a3d70b3d255304"
 dependencies = [
  "ariadne",
  "camino",
@@ -1848,9 +1848,9 @@ dependencies = [
 
 [[package]]
 name = "figue-attrs"
-version = "2.0.6"
+version = "4.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8764eb1d2d251c46c0e191cd5c97864ad93ab66a09bfdb0eb6c9e6096944f23c"
+checksum = "9a8ad195afe7682a9539888961401599f9c4ba6213c24e94ba76fbcd765e948d"
 dependencies = [
  "facet",
 ]
@@ -4702,8 +4702,9 @@ dependencies = [
 
 [[package]]
 name = "styx-cst"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e7ab87207def0a082d741350f47688de927d4fa5f5e843d155b5f403b6433e62"
 dependencies = [
  "rowan",
  "styx-tokenizer",
@@ -4711,8 +4712,9 @@ dependencies = [
 
 [[package]]
 name = "styx-embed"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "16e150e6ce17e17e55a2547f0cde41a08728d3a537b46be54aa9f04a24c031da"
 dependencies = [
  "blake3",
  "goblin",
@@ -4723,8 +4725,9 @@ dependencies = [
 
 [[package]]
 name = "styx-embed-macros"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ca10f4b2db12125581d4b858149a5556e4e04a001e135effa2f8e4fb0abab3da"
 dependencies = [
  "blake3",
  "lz4_flex",
@@ -4735,8 +4738,9 @@ dependencies = [
 
 [[package]]
 name = "styx-format"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fe36619fd3694a74b534b765d7a9308c94ca3edffb98934736c92cc18b2135f7"
 dependencies = [
  "styx-cst",
  "styx-parse",
@@ -4745,8 +4749,9 @@ dependencies = [
 
 [[package]]
 name = "styx-lsp"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ccf1ccceee775c18003f03a53ded04e12001d29dee4218242b0435e3cc656d6f"
 dependencies = [
  "dirs",
  "eyre",
@@ -4773,8 +4778,9 @@ dependencies = [
 
 [[package]]
 name = "styx-lsp-ext"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "137639137e54bc27c690e4f9bc098b78c181c3fa01357167a9f1142cc7334579"
 dependencies = [
  "facet",
  "styx-tree",
@@ -4783,16 +4789,18 @@ dependencies = [
 
 [[package]]
 name = "styx-lsp-test-schema"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "43e333884b720030e1247059089b5f8a8549fae17629967cc91ed40be976c303"
 dependencies = [
  "facet",
 ]
 
 [[package]]
 name = "styx-parse"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9b90ce3c9913304bf2c33e7a3cf7f3c86829563fefc5bb3c2dea291ca11b5a27"
 dependencies = [
  "facet",
  "styx-tokenizer",
@@ -4801,8 +4809,9 @@ dependencies = [
 
 [[package]]
 name = "styx-tokenizer"
-version = "3.0.1"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f5e5a590839a5d2d4a80d0dc326dd1794379291147b45d0961ccbcdbf31f24b2"
 dependencies = [
  "facet",
  "tracing",
@@ -4810,8 +4819,9 @@ dependencies = [
 
 [[package]]
 name = "styx-tree"
-version = "3.0.2"
-source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "95e7221075d283f84d95068629a8aa43a059a6d075642f2a3bb42200e8ce3046"
 dependencies = [
  "ariadne",
  "facet",
