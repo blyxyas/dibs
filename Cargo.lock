@@ -260,9 +260,9 @@ dependencies = [
 
 [[package]]
 name = "autocfg"
-version = "1.5.0"
+version = "1.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
+checksum = "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53"
 
 [[package]]
 name = "axum"
@@ -1170,8 +1170,8 @@ dependencies = [
  "tokio",
  "tokio-postgres",
  "tracing",
- "vox 0.8.2",
- "vox-stream 0.8.2",
+ "vox",
+ "vox-stream",
 ]
 
 [[package]]
@@ -1204,9 +1204,9 @@ dependencies = [
  "tokio",
  "tracing",
  "tracing-subscriber",
- "vox 0.8.2",
- "vox-core 0.8.2",
- "vox-stream 0.8.2",
+ "vox",
+ "vox-core",
+ "vox-stream",
 ]
 
 [[package]]
@@ -1263,7 +1263,7 @@ name = "dibs-proto"
 version = "0.1.0"
 dependencies = [
  "facet",
- "vox 0.8.2",
+ "vox",
 ]
 
 [[package]]
@@ -1363,7 +1363,7 @@ dependencies = [
  "libc",
  "option-ext",
  "redox_users",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -1385,7 +1385,7 @@ checksum = "ad5208a115eaba24916f7456929832e310a81518c641f93fee4f89aa93aa3675"
 dependencies = [
  "cfg-if",
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -1455,7 +1455,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
 dependencies = [
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -1704,8 +1704,7 @@ dependencies = [
 [[package]]
 name = "facet-styx"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1632b326f6333ccaa4a1f296af05e0b3b11e3e26091b2320122b44ae3106864c"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "ariadne",
  "facet",
@@ -2644,7 +2643,7 @@ checksum = "3640c1c38b8e4e43584d8df18be5fc6b0aa314ce6ebf51b53313d4306cca8e46"
 dependencies = [
  "hermit-abi",
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -2680,7 +2679,7 @@ dependencies = [
  "portable-atomic",
  "portable-atomic-util",
  "serde_core",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -3111,8 +3110,8 @@ dependencies = [
  "tokio",
  "tokio-postgres",
  "tokio-tungstenite",
- "vox 0.8.2",
- "vox-stream 0.8.2",
+ "vox",
+ "vox-stream",
  "vox-websocket",
 ]
 
@@ -3198,7 +3197,7 @@ version = "0.50.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7957b9740744892f114936ab4a57b3f487491bbeafaf8083688b16841a4240e5"
 dependencies = [
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -4181,7 +4180,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -4578,7 +4577,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3a766e1110788c36f4fa1c2b71b387a7815aa65f88ce0229841826633d93723e"
 dependencies = [
  "libc",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -4704,8 +4703,7 @@ dependencies = [
 [[package]]
 name = "styx-cst"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b5913c79e5ee8466a7bbfe29e6697ea0ab1ef1b06fab89769c094a7e75da7776"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "rowan",
  "styx-tokenizer",
@@ -4714,8 +4712,7 @@ dependencies = [
 [[package]]
 name = "styx-embed"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "54f76b524094c44b874aafa777cf4a0e669da59df6db24c478ce4b0ad086b75d"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "blake3",
  "goblin",
@@ -4727,8 +4724,7 @@ dependencies = [
 [[package]]
 name = "styx-embed-macros"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b4c7ab3601162aa160af466e25c1792ee2dd8a414ed2099ba85a23cde5cfb343"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "blake3",
  "lz4_flex",
@@ -4740,8 +4736,7 @@ dependencies = [
 [[package]]
 name = "styx-format"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "29fef3586e6fad909b5bbab8cb85e38c96974ffdfaa57fc3ab2c81b0f7fd00be"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "styx-cst",
  "styx-parse",
@@ -4751,8 +4746,7 @@ dependencies = [
 [[package]]
 name = "styx-lsp"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8735819d8f087258cfed1254f376a2047158185d0816bd9d03d3bbe1ae88da70"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "dirs",
  "eyre",
@@ -4772,26 +4766,25 @@ dependencies = [
  "tower-lsp",
  "tracing",
  "tracing-subscriber",
- "vox 0.4.0",
+ "vox",
+ "vox-stream",
  "which",
 ]
 
 [[package]]
 name = "styx-lsp-ext"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ad6bf6d4554ff95c1e16042e040e76d626b8cbc3aee7b62f2e6572a77cdc532c"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "facet",
  "styx-tree",
- "vox 0.4.0",
+ "vox",
 ]
 
 [[package]]
 name = "styx-lsp-test-schema"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "92473ae13e5787107258e1b28f39da5b840d390cc17333c4d2c8758f6b98cf0b"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "facet",
 ]
@@ -4799,8 +4792,7 @@ dependencies = [
 [[package]]
 name = "styx-parse"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b17c2ab20c37e53d88be2cacc3b2bae1fe8bdb0b10a052f032c1f842be90265c"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "facet",
  "styx-tokenizer",
@@ -4810,8 +4802,7 @@ dependencies = [
 [[package]]
 name = "styx-tokenizer"
 version = "3.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7bb4d54574c87d2e1436ecdcf316b76cc5f5ab6defad83811434b2a2be908133"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "facet",
  "tracing",
@@ -4820,8 +4811,7 @@ dependencies = [
 [[package]]
 name = "styx-tree"
 version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "57a065556559a4d24c7a5b7dc59f347f7887c9b4b083549c0b8f2b213c5025f5"
+source = "git+https://github.com/bearcove/styx?rev=6e5eafaef9906ff5a9941e1153c1b3cba543bec9#6e5eafaef9906ff5a9941e1153c1b3cba543bec9"
 dependencies = [
  "ariadne",
  "facet",
@@ -4912,10 +4902,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
 dependencies = [
  "fastrand",
- "getrandom 0.3.4",
+ "getrandom 0.4.2",
  "once_cell",
  "rustix",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -5684,25 +5674,6 @@ checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
 
 [[package]]
 name = "vox"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "550cb4261b59a868246e97c68d7fc904118e2f27d0ad6e806c031b83d7b1b292"
-dependencies = [
- "facet",
- "facet-pretty",
- "facet-reflect",
- "moire",
- "tokio",
- "tracing",
- "vox-core 0.4.0",
- "vox-postcard 0.4.0",
- "vox-service-macros 0.4.0",
- "vox-stream 0.4.0",
- "vox-types 0.4.0",
-]
-
-[[package]]
-name = "vox"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2ec48e56a3d6867dcc43122b828d2aace90f75905f4e9c4d483e002a201ce588"
@@ -5713,12 +5684,12 @@ dependencies = [
  "moire",
  "tokio",
  "tracing",
- "vox-core 0.8.2",
+ "vox-core",
  "vox-jit",
- "vox-postcard 0.8.2",
- "vox-service-macros 0.8.2",
- "vox-stream 0.8.2",
- "vox-types 0.8.2",
+ "vox-postcard",
+ "vox-service-macros",
+ "vox-stream",
+ "vox-types",
 ]
 
 [[package]]
@@ -5730,29 +5701,7 @@ dependencies = [
  "facet-cbor",
  "facet-core",
  "heck",
- "vox-types 0.8.2",
-]
-
-[[package]]
-name = "vox-core"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7698d68fc31e8a107319f2f70fc22d7056c4bb0c4cac1b812e678b71d412c740"
-dependencies = [
- "facet",
- "facet-cbor",
- "facet-core",
- "facet-error",
- "facet-reflect",
- "getrandom 0.4.2",
- "moire",
- "smallvec 1.15.1",
- "tokio",
- "tracing",
- "vox-postcard 0.4.0",
- "vox-types 0.4.0",
- "wasm-bindgen-futures",
- "zerocopy",
+ "vox-types",
 ]
 
 [[package]]
@@ -5773,8 +5722,8 @@ dependencies = [
  "tokio",
  "tracing",
  "vox-jit",
- "vox-postcard 0.8.2",
- "vox-types 0.8.2",
+ "vox-postcard",
+ "vox-types",
  "wasm-bindgen-futures",
  "zerocopy",
 ]
@@ -5810,8 +5759,8 @@ dependencies = [
  "tracing",
  "vox-jit-abi",
  "vox-jit-cal",
- "vox-postcard 0.8.2",
- "vox-schema 0.8.2",
+ "vox-postcard",
+ "vox-schema",
 ]
 
 [[package]]
@@ -5838,19 +5787,6 @@ dependencies = [
 
 [[package]]
 name = "vox-macros-core"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bfd15ed42ea2433772ccccf96c3398624d40b535a2f08b6216a93ad433863213"
-dependencies = [
- "facet-cargo-toml",
- "heck",
- "proc-macro2",
- "quote",
- "vox-macros-parse 0.4.0",
-]
-
-[[package]]
-name = "vox-macros-core"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "855f39ea7768bfb048fd872b7b07c205ec8480ccf13f40e65997d0e92185ed97"
@@ -5859,17 +5795,7 @@ dependencies = [
  "heck",
  "proc-macro2",
  "quote",
- "vox-macros-parse 0.8.2",
-]
-
-[[package]]
-name = "vox-macros-parse"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c3971b499ce746324725d29d004081301d3544e9bbe462b16d9f721fe671322"
-dependencies = [
- "proc-macro2",
- "unsynn",
+ "vox-macros-parse",
 ]
 
 [[package]]
@@ -5884,18 +5810,6 @@ dependencies = [
 
 [[package]]
 name = "vox-postcard"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3d8ccd6cfc2218d9ee0eedd66a2cab90caa2b2edd77b14598b2e95d582138d24"
-dependencies = [
- "facet",
- "facet-core",
- "facet-reflect",
- "vox-schema 0.4.0",
-]
-
-[[package]]
-name = "vox-postcard"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "92b1b4201787bbbc8b44729597c28539b59a473385a190f5469f12f1d9de32d6"
@@ -5906,20 +5820,7 @@ dependencies = [
  "facet-value",
  "vox-jit-abi",
  "vox-jit-cal",
- "vox-schema 0.8.2",
-]
-
-[[package]]
-name = "vox-schema"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "959c0e228704a4f33a79e46335abe19a16e048d604b96b4b6fd5a22cdc726e09"
-dependencies = [
- "blake3",
- "facet",
- "facet-cbor",
- "facet-core",
- "indexmap 2.14.0",
+ "vox-schema",
 ]
 
 [[package]]
@@ -5937,35 +5838,12 @@ dependencies = [
 
 [[package]]
 name = "vox-service-macros"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5bfa731cd032bd4e6c93eded9132f9d85afb3059fff60e7058dbccb230ae52fa"
-dependencies = [
- "proc-macro2",
- "vox-macros-core 0.4.0",
-]
-
-[[package]]
-name = "vox-service-macros"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0580179f754b8ce97501a0c15bdf15098e67cadf255cf13173b382da8829a752"
 dependencies = [
  "proc-macro2",
- "vox-macros-core 0.8.2",
-]
-
-[[package]]
-name = "vox-stream"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d5499935a426cc81228e9b58aaecd5018f04812851a8fd3e5fa70b52f1eaa45f"
-dependencies = [
- "libc",
- "moire",
- "tokio",
- "vox-core 0.4.0",
- "vox-types 0.4.0",
+ "vox-macros-core",
 ]
 
 [[package]]
@@ -5978,33 +5856,9 @@ dependencies = [
  "moire",
  "tokio",
  "tracing",
- "vox-core 0.8.2",
+ "vox-core",
  "vox-fdpass",
- "vox-types 0.8.2",
-]
-
-[[package]]
-name = "vox-types"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a70e0805a3613451987220bc074fdbd51a986ffd0e8698e429e321c3121dcfc9"
-dependencies = [
- "bitflags 2.11.1",
- "blake3",
- "facet",
- "facet-cbor",
- "facet-core",
- "facet-path",
- "facet-reflect",
- "futures-channel",
- "heck",
- "indexmap 2.14.0",
- "moire",
- "smallvec 1.15.1",
- "structstruck",
- "tokio",
- "vox-postcard 0.4.0",
- "vox-schema 0.4.0",
+ "vox-types",
 ]
 
 [[package]]
@@ -6029,8 +5883,8 @@ dependencies = [
  "structstruck",
  "tokio",
  "vox-jit",
- "vox-postcard 0.8.2",
- "vox-schema 0.8.2",
+ "vox-postcard",
+ "vox-schema",
  "wasmtimer",
 ]
 
@@ -6046,8 +5900,8 @@ dependencies = [
  "js-sys",
  "tokio",
  "tokio-tungstenite",
- "vox-core 0.8.2",
- "vox-types 0.8.2",
+ "vox-core",
+ "vox-types",
  "wasm-bindgen",
  "web-sys",
 ]
@@ -6403,7 +6257,7 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
 dependencies = [
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]

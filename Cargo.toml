@@ -102,7 +102,17 @@ testcontainers-modules = { version = "0.15", features = ["postgres"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
-# [patch.crates-io]
+[patch.crates-io]
+facet-styx = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+styx-embed = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+styx-tree = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+styx-parse = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+styx-cst = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+styx-format = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+styx-lsp-ext = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+styx-lsp = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+styx-lsp-test-schema = { git = "https://github.com/bearcove/styx", rev = "6e5eafaef9906ff5a9941e1153c1b3cba543bec9" }
+
 # facet = { path = "../facet/facet" }
 
 # # Note: Uncomment to develop facet
@@ -120,17 +130,6 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 # facet-testhelpers = { path = "../facet/facet-testhelpers" }
 # facet-toml = { path = "../facet/facet-toml" }
 # facet-value = { path = "../facet/facet-value" }
-
-# [patch."https://github.com/bearcove/styx"]
-# facet-styx = { path = "../styx/crates/facet-styx" }
-# styx-embed = { path = "../styx/crates/styx-embed" }
-# styx-tree = { path = "../styx/crates/styx-tree" }
-# styx-parse = { path = "../styx/crates/styx-parse" }
-# styx-cst = { path = "../styx/crates/styx-cst" }
-# styx-format = { path = "../styx/crates/styx-format" }
-# styx-lsp-ext = { path = "../styx/crates/styx-lsp-ext" }
-# styx-lsp = { path = "../styx/crates/styx-lsp" }
-# styx-lsp-test-schema = { path = "../styx/crates/styx-lsp-test-schema" }
 
 # [patch."https://github.com/bearcove/roam"]
 # roam = { path = "../roam/rust/roam" }
