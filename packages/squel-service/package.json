@@ -11,11 +11,11 @@
     }
   },
   "dependencies": {
-    "@bearcove/roam-core": "github:bearcove/roam#path:typescript/packages/roam-core",
-    "@bearcove/roam-postcard": "github:bearcove/roam#path:typescript/packages/roam-postcard",
-    "@bearcove/roam-ws": "github:bearcove/roam#path:typescript/packages/roam-ws"
+    "@bearcove/vox-core": "^0.8.2",
+    "@bearcove/vox-postcard": "^0.8.2",
+    "@bearcove/vox-ws": "^0.8.2"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^6.0.3"
   }
 }

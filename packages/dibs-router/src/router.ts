@@ -40,7 +40,7 @@ export function defineRoutes<const T extends Record<string, RouteConfig>>(
       path: def.path,
       query: def.query ?? {},
       component: def.component,
-    } satisfies Route;
+    } as Route;
   }
 
   return routes;

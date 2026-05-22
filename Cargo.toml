@@ -25,35 +25,35 @@ dibs-runtime = { path = "crates/dibs-runtime" }
 dockside = { path = "crates/dockside" }
 
 # facet ecosystem
-facet = { git = "https://github.com/facet-rs/facet", branch = "main" }
-figue = { git = "https://github.com/bearcove/figue", branch = "main" }
-facet-core = { git = "https://github.com/facet-rs/facet", branch = "main" }
-facet-value = { git = "https://github.com/facet-rs/facet", branch = "main" }
-facet-json = { git = "https://github.com/facet-rs/facet", branch = "main" }
-facet-reflect = { git = "https://github.com/facet-rs/facet", branch = "main" }
-facet-testhelpers = { git = "https://github.com/facet-rs/facet", branch = "main" }
+facet = "0.46"
+figue = "2"
+facet-core = "0.46"
+facet-value = "0.46"
+facet-json = "0.46"
+facet-reflect = "0.46"
+facet-testhelpers = "0.46"
 facet-tokio-postgres = { path = "crates/facet-tokio-postgres" }
 
-strid = { git = "https://github.com/bearcove/strid", branch = "main" }
+strid = "10"
 
 # styx ecosystem
-facet-styx = { git = "https://github.com/bearcove/styx", branch = "main" }
-styx-embed = { git = "https://github.com/bearcove/styx", branch = "main" }
-styx-tree = { git = "https://github.com/bearcove/styx", branch = "main", features = ["facet"] }
-styx-lsp-ext = { git = "https://github.com/bearcove/styx", branch = "main" }
-styx-lsp = { git = "https://github.com/bearcove/styx", branch = "main" }
+facet-styx = "3"
+styx-embed = "3"
+styx-tree = { version = "3", features = ["facet"] }
+styx-lsp-ext = "3"
+styx-lsp = "3"
 
-# roam ecosystem
-roam = { git = "https://github.com/bearcove/roam", branch = "main" }
-roam-codegen = { git = "https://github.com/bearcove/roam", branch = "main" }
-roam-session = { git = "https://github.com/bearcove/roam", branch = "main" }
-roam-stream = { git = "https://github.com/bearcove/roam", branch = "main" }
-roam-websocket = { git = "https://github.com/bearcove/roam", branch = "main" }
+# vox ecosystem
+vox = "0.8"
+vox-codegen = "0.8"
+vox-core = "0.8"
+vox-stream = "0.8"
+vox-websocket = "0.8"
 
 # async runtime
 tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
 tokio-postgres = { version = "0.7" }
-tokio-tungstenite = "0.26"
+tokio-tungstenite = "0.29"
 deadpool-postgres = "0.14"
 
 # serialization & data
@@ -97,13 +97,10 @@ blake3 = "1"
 # dev/test dependencies
 insta = "1"
 proptest = "1"
-testcontainers = "0.26"
-testcontainers-modules = { version = "0.14", features = ["postgres"] }
+testcontainers = "0.27"
+testcontainers-modules = { version = "0.15", features = ["postgres"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
-
-[patch.crates-io]
-facet = { git = "https://github.com/facet-rs/facet", branch = "main" }
 
 # [patch.crates-io]
 # facet = { path = "../facet/facet" }
