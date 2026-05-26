@@ -46,7 +46,6 @@ styx-lsp = "4"
 # vox ecosystem
 vox = "0.8"
 vox-codegen = "0.8"
-vox-core = "0.8"
 vox-stream = "0.8"
 vox-websocket = "0.8"
 

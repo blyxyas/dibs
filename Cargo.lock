@@ -1205,7 +1205,6 @@ dependencies = [
  "tracing",
  "tracing-subscriber",
  "vox",
- "vox-core",
  "vox-stream",
 ]
 
@@ -3111,7 +3110,6 @@ dependencies = [
  "tokio-postgres",
  "tokio-tungstenite",
  "vox",
- "vox-stream",
  "vox-websocket",
 ]
 
