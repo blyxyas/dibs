@@ -1308,6 +1308,7 @@ dependencies = [
  "jiff",
  "rust_decimal",
  "tokio-postgres",
+ "tracing",
  "uuid",
 ]
 
