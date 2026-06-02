@@ -4,9 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - 'docs/**'
-      - '.config/dodeca.styx'
-      - '.github/workflows/website.yml'
+      - "docs/**"
+      - ".config/dodeca.styx"
+      - ".github/workflows/website.yml"
   workflow_dispatch:
 
 permissions:
@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: depot-ubuntu-24.04-4
+    runs-on: bearcove-ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
 
@@ -49,7 +49,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: depot-ubuntu-24.04
+    runs-on: bearcove-ubuntu-24.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages
