@@ -1,18 +1,8 @@
 # release-plz configuration
 # https://release-plz.ieni.dev/docs/config
-
-# Examples should not be released to crates.io
-[[package]]
-name = "my-app"
-release = false
-changelog_update = false
-
-[[package]]
-name = "my-app-db"
-release = false
-changelog_update = false
-
-[[package]]
-name = "my-app-queries"
-release = false
-changelog_update = false
+#
+# Publish policy lives in each crate's Cargo.toml via `publish = false`
+# (examples + internal-only crates like dibs-codegen / dockside / xtask).
+# release-plz inherits that automatically, so there are no per-package
+# entries here. Do not re-add `release = false` entries for crates that
+# already set `publish = false` — release-plz errors on the inconsistency.
