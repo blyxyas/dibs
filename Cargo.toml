@@ -13,15 +13,15 @@ ignored = ["dibs-runtime"]
 
 [workspace.dependencies]
 # Internal crates
-dibs = { path = "crates/dibs" }
-dibs-config = { path = "crates/dibs-config" }
-dibs-macros = { path = "crates/dibs-macros" }
-dibs-proto = { path = "crates/dibs-proto" }
-dibs-qgen = { path = "crates/dibs-qgen" }
-dibs-query-schema = { path = "crates/dibs-query-schema" }
-dibs-db-schema = { path = "crates/dibs-db-schema" }
-dibs-jsonb = { path = "crates/dibs-jsonb" }
-dibs-runtime = { path = "crates/dibs-runtime" }
+dibs = { path = "crates/dibs", version = "0.1.1" }
+dibs-config = { path = "crates/dibs-config", version = "0.1.0" }
+dibs-macros = { path = "crates/dibs-macros", version = "0.1.0" }
+dibs-proto = { path = "crates/dibs-proto", version = "0.1.0" }
+dibs-qgen = { path = "crates/dibs-qgen", version = "0.1.0" }
+dibs-query-schema = { path = "crates/dibs-query-schema", version = "0.1.0" }
+dibs-db-schema = { path = "crates/dibs-db-schema", version = "0.1.0" }
+dibs-jsonb = { path = "crates/dibs-jsonb", version = "0.1.0" }
+dibs-runtime = { path = "crates/dibs-runtime", version = "0.1.0" }
 dockside = { path = "crates/dockside" }
 
 # facet ecosystem
@@ -32,7 +32,7 @@ facet-value = "0.46"
 facet-json = "0.46"
 facet-reflect = "0.46"
 facet-testhelpers = "0.46"
-facet-tokio-postgres = { path = "crates/facet-tokio-postgres" }
+facet-tokio-postgres = { path = "crates/facet-tokio-postgres", version = "0.44.0" }
 
 strid = "10"
 
