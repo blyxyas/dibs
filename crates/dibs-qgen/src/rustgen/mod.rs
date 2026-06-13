@@ -1035,7 +1035,7 @@ fn param_type_to_rust(ty: &dibs_query_schema::ParamType) -> String {
         // caller-facing type is therefore plain `String` — the same
         // shape they'd produce from `facet_json::to_string`, an axum
         // body, or a webhook delivery.
-        ParamType::Jsonb => "String".to_string(),
+        ParamType::Jsonb => "Jsonb<facet_value::Value>".to_string(),
         ParamType::Optional(inner_vec) => {
             if let Some(inner) = inner_vec.first() {
                 format!("Option<{}>", param_type_to_rust(inner))
